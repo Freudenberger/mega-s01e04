@@ -67,7 +67,7 @@ describe('GET /digest/:night', () => {
     expect(html).toContain('—'); // null owner and null lastError
     expect(html).toContain('upstream 503');
     expect(html).toContain('quota exceeded');
-    expect(html).not.toContain("didn't parse");
+    expect(html).not.toContain('parse</p>');
   });
 
   it('renders the empty night: 200, no table, "nothing ran"', async () => {
@@ -81,7 +81,7 @@ describe('GET /digest/:night', () => {
   it('notes a bad line and still renders the night', async () => {
     const { res, html } = await page(BAD);
     expect(res.status).toBe(200);
-    expect(html).toContain("1 line didn't parse");
+    expect(html).toContain('1 line didn&#39;t parse');
     expect(html).toContain('a/two');
     expect(html).toContain('b/one');
   });
