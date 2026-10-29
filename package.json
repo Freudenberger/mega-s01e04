@@ -3,6 +3,7 @@
   "version": "0.3.0",
   "private": true,
   "license": "MIT",
+  "packageManager": "pnpm@12.16.1",
   "type": "module",
   "description": "The lane's resident service: keeps a heartbeat, serves the status board, reads the night's run log.",
   "scripts": {
