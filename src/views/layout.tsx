@@ -14,6 +14,7 @@ const css = `
   table { border-collapse: collapse; width: 100%; }
   th, td { text-align: left; padding: .35rem .75rem .35rem 0; border-bottom: 1px solid var(--line); }
   th { color: var(--mute); font-weight: normal; }
+  .marked td { color: var(--warn); }
   .warn { color: var(--warn); }
   .mute { color: var(--mute); }
 `;
