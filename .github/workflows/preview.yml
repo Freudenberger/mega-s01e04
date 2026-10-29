@@ -11,8 +11,8 @@ on:
       marker:
         description: "on: page carries LANE_MARKER; off: saved with LANE_MARKER unset"
         type: choice
-        options: [on, off]
-        default: on
+        options: ["on", "off"]
+        default: "on"
       night:
         description: "night to preview"
         default: "2026-10-28"
